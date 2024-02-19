@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan-active: hsl(178, 100%, 50%);
+  --text: hsl(215, 51%, 70%);
+}
+body {
+  font-size: 1.125rem;
+  font-family: "Outfit", serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 0rem;
+  background-color: var(--main-bg);
+}
+main {
+  max-width: 23.4375rem;
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem 1rem 0;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container_img-container {
+  position: relative;
+  width: 100%;
+}
+.card-container_img-container .image-back {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  border-radius: 0.75rem;
+  position: relative;
+}
+/* .card-container_img-container .view {
+  display: none; 
+  color: var(--cyan-active); 
+  background-color: var(--cyan-active);
+  position: absolute;
+  top: 42%;
+  left: 42%; 
+} */
+.card-container_text-container h1 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.card-container_text-container h1 ~ p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.text-container_price-date .price img {
+  width: 0.875rem;
+}
+.text-container_price-date .timer img {
+  width: 1.25rem;
+}
+.text-container_price-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.text-container_price-date .price {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 600;
+}
+.text-container_price-date .timer {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 400;
+}
+.text-container_price-date .price .eth {
+  text-transform: uppercase;
+}
+hr {
+  background-color: var(--cyan-active);
+  height: 1px;
+  border: none;
+  opacity: 0.3;
+}
+.text-container_profile {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  font-size: 1rem;
+}
+.text-container_profile img {
+  width: 3.12rem;
+  border: 2px var(--white) solid;
+  border-radius: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+a:hover {
+  color: var(--cyan-active);
+}
+.card-container_text-container p:nth-of-type(1),
+.attribution {
+  color: var(--text);
+}
+.text-container_price-date .price p {
+  color: var(--cyan-active);
+}
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
