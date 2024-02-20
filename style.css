@@ -62,7 +62,7 @@ main {
 }
 .card-container_img-container div:hover {
   cursor: pointer;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 .card-container_text-container h1 {
